@@ -1,14 +1,17 @@
 # Motivational Quote Microservice
 
 ## Description
+
 This microservice provides a lightweight backend solution for serving random motivational quotes. It listens for HTTP GET requests and retrieves a randomly selected quote and its associated author from a local JSON dataset (`quotes.json`). The service then returns this information in a structured JSON format, making it easy to integrate daily inspiration into dashboards, health trackers, or other applications.
 
 ## How to Programmatically REQUEST Data
-To request data from this microservice, you must send an HTTP GET request to the `/get_quote` endpoint. 
+
+To request data from this microservice, you must send an HTTP GET request to the `/get_quote` endpoint.
 
 Because this is a simple retrieval operation, no JSON payload or parameters are required in the body of your request.
 
 **Example Request using Python's `requests` library:**
+
 ```python
 import requests
 
